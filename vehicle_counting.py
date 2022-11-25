@@ -33,12 +33,14 @@ for img_path in images_folder:
     cv2.imshow("Cars", img)
     cv2.waitKey(1)
 
-# MAX TRAFFIC ON WHICH ROAD
+# Calculating MAX TRAFFIC ON WHICH ROAD
 
 r1=roads[0]
 r2=roads[1]
 r3=roads[2]
 r4=roads[3]
+
+# Passing Values to arduino using pyserial
 
 Obj = serial.Serial("/dev/cu.usbmodem1101")
 Obj.Baudrate = 9600
